@@ -1,0 +1,176 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    padding:  1rem;
+    height: 100px;
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 500;
+    transition: 0.5s;
+    color: black;
+    
+}
+
+.nav_list{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.links a{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+}
+
+.links a:hover{
+    color: orange;
+}
+
+.reg_btn {
+    color: white; 
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.reg_btn:hover{
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+    text-decoration: none;
+}
+
+.container{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    min-height: calc(100vh- 100px);
+    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.content{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.content h1{
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    font-size: 45px;
+    font-weight: 400;
+    color: black; 
+}
+
+span{
+    color: orange;
+}
+
+.content p{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: black;
+}
+
+.content form{
+    display: flex;
+    align-items: center;
+}
+
+.content input{
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    max-width: 300px;
+    padding: 1rem;
+    outline: none;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.content button{
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 10px rgb(0,0,0);
+    font-size: 18px;
+    white-space: nowrap;
+    width: fit-content;
+    color: white;
+    background-color: white;
+    padding: 1rem;
+    transition: .4s;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.content button:hover{
+    background-color:transparent;
+    color: orange;
+}
+
+.img_container img:nth-child(1){
+    transform: translateY(40px);
+}
+
+.img_container img:nth-child(2){
+    transform: translateY(-40px);
+}
+
+.img_container{
+    position: relative; 
+    gap: 2rem;
+    place-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.img_container img{
+    width: 450px;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+
+.img_content{
+    color: orange;
+    font-size: 18px;
+    max-width: 310px;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-30%, 50%);
+    padding: 1rem;
+    
+    
+}
+
+.img_content li{
+    margin-bottom: 1rem;
+}
+
